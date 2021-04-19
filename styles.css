@@ -41,7 +41,7 @@ header {
 .flex-item-nav a {
   color: black;
 }
-@media (max-width: 500px) {
+@media (max-width: 640px) {
   .flexbox-item.nav {
     justify-content: space-between;
   }
@@ -52,6 +52,9 @@ header {
   header h1 {
     font-size: 26px;
     padding-left: 10px;
+  }
+  .flexbox-item-portfolio {
+    flex-wrap: wrap;
   }
 }
 /*Mission section*/
@@ -132,7 +135,7 @@ img {
   text-align: center;
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 640px) {
   #team {
     height: 1700px;
   }
@@ -146,7 +149,7 @@ footer {
   padding: 30px 0;
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 640px) {
   footer {
     font-size: 18px;
   }
