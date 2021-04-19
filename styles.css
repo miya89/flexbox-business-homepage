@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-size: 22px;
+  font-family: "Lexend Mega", sans-serif;
+}
+h2 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+/*Heading section */
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-container a {
+  color: black;
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  top: 0;
+}
+
+.flexbox-item.logo {
+  flex: 6;
+  padding-left: 20px;
+}
+
+.flexbox-item.nav {
+  flex: 4;
+  display: flex;
+  justify-content: space-evenly;
+  flex-basis: 10%;
+}
+
+.flex-item-nav a {
+  color: black;
+}
+@media (max-width: 500px) {
+  .flexbox-item.nav {
+    justify-content: space-between;
+  }
+  .flex-item-nav {
+    padding: 5px;
+    font-size: 17px;
+  }
+  header h1 {
+    font-size: 26px;
+    padding-left: 10px;
+  }
+}
+/*Mission section*/
+.flexbox-container {
+  display: flex;
+  justify-content: center;
+}
+
+#mission {
+  margin-top: 80px;
+  background-image: url("/images/feature.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 70px;
+  height: 400px;
+  flex-basis: 100%;
+}
+
+.mission-content {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  margin: auto;
+}
+
+/*Portfolio section */
+.portfolio-content {
+  text-align: center;
+}
+
+.flexbox-container-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flexbox-item-portfolio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+img {
+  width: 200px;
+}
+
+.flexbox-item-portfolio span {
+  padding: 5px;
+  min-width: 240px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Team section */
+
+.fexbox-container-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#team {
+  background-image: url("images/frontdoor.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+}
+
+.team-member {
+  padding: 20px;
+  flex-basis: 280px;
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (max-width: 690px) {
+  #team {
+    height: 1700px;
+  }
+}
+
+/*Footer section*/
+
+footer {
+  height: 300px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+@media only screen and (max-width: 690px) {
+  footer {
+    font-size: 18px;
+  }
+}
